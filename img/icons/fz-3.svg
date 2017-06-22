@@ -1,0 +1,28 @@
+<svg width="86" height="118" viewBox="0 0 86 118" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>&#209;&#131;&#209;&#129;&#208;&#187;&#208;&#190;&#208;&#178;&#208;&#184;&#209;&#143;</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="matrix(2 0 0 2 -5178 -4430)">
+<g id="&#209;&#131;&#209;&#129;&#208;&#187;&#208;&#190;&#208;&#178;&#208;&#184;&#209;&#143;">
+<g id="Rectangle 11">
+<use xlink:href="#path0_stroke" transform="translate(2590 2216)" fill="#31AF31"/>
+</g>
+<g id="Rectangle 11">
+<use xlink:href="#path0_stroke" transform="translate(2610.5 2216)" fill="#31AF31"/>
+</g>
+<g id="Vector 17">
+<use xlink:href="#path1_stroke" transform="translate(2595 2268)" fill="#31AF31"/>
+</g>
+<g id="Ellipse 7">
+<use xlink:href="#path2_fill" transform="translate(2603 2240)" fill="#31AF31"/>
+</g>
+<g id="Ellipse 7">
+<use xlink:href="#path2_fill" transform="translate(2616 2240)" fill="#31AF31"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_stroke" d="M 0 0L 0 -1L -1 -1L -1 0L 0 0ZM 20.5 0L 21.5 0L 21.5 -1L 20.5 -1L 20.5 0ZM 20.5 52L 20.5 53L 21.5 53L 21.5 52L 20.5 52ZM 0 52L -1 52L -1 53L 0 53L 0 52ZM 0 1L 20.5 1L 20.5 -1L 0 -1L 0 1ZM 19.5 0L 19.5 52L 21.5 52L 21.5 0L 19.5 0ZM 20.5 51L 0 51L 0 53L 20.5 53L 20.5 51ZM 1 52L 1 0L -1 0L -1 52L 1 52Z"/>
+<path id="path1_stroke" d="M -1 0L -1 5.5L 1 5.5L 1 0L -1 0ZM 30 0.5L 30 6L 32 6L 32 0.5L 30 0.5Z"/>
+<path id="path2_fill" d="M 2 1.5C 2 2.32843 1.55228 3 1 3C 0.447715 3 0 2.32843 0 1.5C 0 0.671573 0.447715 0 1 0C 1.55228 0 2 0.671573 2 1.5Z"/>
+</defs>
+</svg>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="ru">
+<!--<![endif]-->
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>TauFit - Новость</title>
+    <meta name="description" content="">
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/slick.css">
+
+    <link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+
+
+    <div id="vue-app">
+
+        <vue-modals></vue-modals>
+
+        <header class="header header-news">
+            <div class="wrap">
+                <vue-navigation></vue-navigation>
+
+            </div>
+        </header>
+
+        <section class="new-inner">
+            <div class="wrap">
+                <div class="ni-date">13 января 2016 11:01</div>
+                <!-- Заголовок новости -->
+                <h2>Всего 6% посетительниц фитнес-клубов
+                питаются правильно – опрос</h2>
+                <!-- Описание новости -->
+                <h3>Редакция провела опрос среди своих читательниц и выяснила, что лишь 6 процентов посетителей фитнес-клубов регулярно питаются правильно.</h3>
+
+                <div class="in-img">
+                    <img src="./img/new1.jpg" alt="">
+                </div>
+
+                <p>В начале года, когда многие стремятся начать заниматься спортом, портал «Леди Mail.Ru» выяснил, как относятся к фитнес-клубам его читательницы. Результаты опроса показали, что почти половина респондентов регулярно занимается спортом.
+
+                Карту фитнес-клуба имеют 64 процента опрошенных. Из тех, у кого ее нет, более половины (52 процента) планируют ее приобрести. Среди главных причин, по которым россиянки занимаются спортом, лидируют стремление стать более здоровой (50 процентов голосов), а также желание похудеть и «подкачаться» (по 47 процентов).
+
+                46 процентов опрошенных посещают фитнес-клуб от трех до пяти раз в неделю, 44 процента делают это чуть реже — один-два раза в неделю. 1,5 процента признались, что, имея карту фитнес-клуба, пока так ни разу и не посетили спортзал.
+
+                27 процентов респондентов посещают фитнес-клуб чаще в преддверии лета или Нового года. Однако подавляющее большинство принявших участие в опросе читательниц (73 процента) в течение всего года занимаются одинаково усердно.
+
+                Результаты опроса показали, что большинство посетительниц фитнес-клубов стараются питаться правильно: об этом заявили 80 процентов опрошенных. Однако лишь 6 процентов из них всегда выбирают только полезную пищу, 74 процента же регулярно делают исключения.
+
+                Что касается стоимости карт, то 38 процентов респондентов приобрели годовую карту за 10—20 тысяч рублей. Интересно, что ровно столько же готовы отдать за нее большинство (40 процентов) тех, кто только планирует открыть для себя мир фитнеса.
+
+                Больше всего в фитнес-клубах россиянок привлекает тренажерный зал, в котором можно заниматься самостоятельно (47 процентов голосов). На втором месте оказались групповые занятия (44 процента голосов). 25 процентов получили индивидуальные занятия в тренажерном зале с тренером, 24 — возможность поплавать в бассейне.
+
+                Оттолкнуть от посещения фитнес-клуба большинство девушек (60 процентов) может слишком большое количество посетителей, для каждой второй неприемлема духота в зале, для каждой третьей (32 процента голосов) — непрофессионализм тренеров.
+
+                Половина опрошенных заявили, что для них не имеет никакого значения, насколько сознательно их фитнес-клуб использует природные ресурсы: экономит ли воду и электроэнергию, сдает ли на переработку отходы и так далее.</p>
+
+            </div>
+        </section>
+
+        <div class="in-icons">
+            <div class="wrap">
+                <div class="in-icon in-fb">
+                        <img src="./img/icons/in-fb.svg" alt="">
+                        <p>facebook</p>
+                </div>
+                <div class="in-icon in-vk">
+                        <img src="./img/icons/in-vk.svg" alt="">
+                        <p>вконтакте</p>
+                </div>
+                <div class="in-icon in-tw">
+                        <img src="./img/icons/in-tw.svg" alt="">
+                        <p>twitter</p>
+                </div>
+            </div>
+        </div>
+
+        <vue-footer></vue-footer>
+
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+
+    <script src="js/maskedinput.js"></script>
+    <script type="text/javascript">
+        jQuery(function($) {
+            $(".client-tel").mask("+7(999)999-99-99");
+        });
+
+    </script>
+
+    <script src="js/script.js"></script>
+
+    <script src="js/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            /* SLICK SLIDERS */
+
+            $('.slick-sliders').slick({
+                centerMode: false,
+                slidesToShow: 1,
+                centerPadding: '0px',
+                arrows: true,
+                dots: false,
+                autoplay: false,
+                autoplaySpeed: 2800,
+            });
+
+
+        });
+
+    </script>
+
+    <script src="js/vue.js"></script>
+
+    <script src="js/taufit.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="ru">
+<!--<![endif]-->
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>TauFit - О клубе</title>
+    <meta name="description" content="">
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/slick.css">
+
+    <link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+
+
+    <div id="vue-app">
+
+        <vue-modals></vue-modals>
+
+        <header class="header header-club">
+            <div class="wrap">
+                <vue-navigation></vue-navigation>
+
+                <h1>О клубе</h1>
+
+                <h2>TAUFIT - спортивно-оздоровительный центр в Западном районе Алматы.
+                Центр TauFit разделен на 2 направления: тренажерный зал (520 кв.м)
+                и реабилитационный центр с 4 программами медицинских процедур
+                и 15 видами массажа.<br/>
+                Для гостей и обладателей клубных карт доступна просторная раздевалка
+                с финской сауной, душевыми кабинами, индивидуальными шкафчиками
+                и ванными принадлежностями. Инструкторы зала всегда готовы помочь начинающим в освоении правильной техники выполнения упражнений.<br/>
+                В списке групповых программ центра TauFit: фитнес-программы
+                для похудения и поддержания формы, секции боевых искусств и секции для детей.<br/>
+                Станьте частью спортивной семьи TauFit.</h2>
+
+                <button class="btn btn-left btn-green">ЗАДАТЬ ВОПРОС</button>
+
+                <div class="head-last">
+                    <vue-head-icons></vue-head-icons>
+
+                    <div class="head-address">
+                        <p>г. Алматы, мкр. Мау Самал, 98</p>
+                        <span>схема проезда</span>
+                    </div>
+
+                </div>
+
+            </div>
+        </header>
+
+        <section class="club-cards">
+            <div class="wrap">
+                <h2>КЛУБНЫЕ КАРТЫ</h2>
+                <h3>Карта на 1 год</h3>
+
+
+            </div>
+        </section>
+
+        <section class="club-elite">
+            <div class="wrap">
+                <h3>КЛУБНАЯ КАРТА ELITE</h3>
+                <div class="ce-card">
+                    <img src="./img/cards/card1.jpg" alt="">
+                </div>
+
+                <div class="ce-icons">
+                    <div class="ce-icon">
+                        <img src="./img/icons/ce-1.svg" alt="">
+                        <p>Фитнес тестирование,
+                        ознакомительный
+                        инструктаж
+                        в тренажерном зале</p>
+                    </div>
+                    <div class="ce-icon">
+                        <img src="./img/icons/ce-2.svg" alt="">
+                        <p>Заморозка до 60 дней,
+                        10 гостевых посещений</p>
+                    </div>
+                    <div class="ce-icon">
+                        <img src="./img/icons/ce-3.svg" alt="">
+                        <p>Сауна (финская),
+                        душ, халат, большое
+                        и маленькое
+                        полотенца, халат</p>
+                    </div>
+                    <div class="ce-icon">
+                        <img src="./img/icons/ce-4.svg" alt="">
+                        <p>Посещение групповых
+                        программ, 20% скидка
+                        на все процедуры</p>
+                    </div>
+
+                    <button class="btn btn-left btn-green">Оформить карту</button>
+                    <div class="ce-price">360 000 тг</div>
+                </div>
+
+
+
+            </div>
+        </section>
+
+        <section class="club-training">
+            <div class="wrap">
+                <h2>ТРЕНИРОВКИ С ИНСТРУКТОРОМ</h2>
+
+                <div class="cr-left">
+                    <p>Профессиональный фитнес-инструктор создаст индивидуальный план занятий с учетом специфики вашего тела и желаемых целей. Разработает полезный рацион для поддержания эффекта от выполняемых упражнений. Гарантирует достижение результатов при непрерывном следовании заданному плану.<br/>
+                    <br/>
+                    Более того, персональный инструктор станет вашим тренером, психологом, мотиватором и будильником.</p>
+
+                    <span>1 персональная тренировка – 5000 тг</span>
+
+                    <span>6 персональных тренировок – 20 000 тг</span>
+
+                    <span>12 персональных тренировок – 30 000 тг</span>
+
+                    <button class="btn btn-left btn-green">НАЙТИ ТРЕНЕРА</button>
+
+                </div>
+
+                <div class="cr-right">
+                    <div class="mo-border">
+                        <img src="./img/club-trainers.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <vue-footer></vue-footer>
+
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+
+    <script src="js/maskedinput.js"></script>
+    <script type="text/javascript">
+        jQuery(function($) {
+            $(".client-tel").mask("+7(999)999-99-99");
+        });
+
+    </script>
+
+    <script src="js/script.js"></script>
+
+    <script src="js/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            /* SLICK SLIDERS */
+
+            $('.slick-sliders').slick({
+                centerMode: false,
+                slidesToShow: 1,
+                centerPadding: '0px',
+                arrows: true,
+                dots: false,
+                autoplay: false,
+                autoplaySpeed: 2800,
+            });
+
+
+        });
+
+    </script>
+
+    <script src="js/vue.js"></script>
+
+    <script src="js/taufit.js"></script>
+
+</body>
+
+</html>

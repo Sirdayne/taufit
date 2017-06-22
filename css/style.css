@@ -199,6 +199,78 @@ h6 {
   font-size: 50px;
   font-family: "OpenSans-ExtraBold";
 }
+.header-news {
+  padding-bottom: 40px;
+}
+.header-club {
+  min-height: 780px;
+  background: url('../img/header-club.jpg') center center no-repeat;
+  background-size: cover;
+}
+.header-club h1 {
+  float: left;
+  margin-top: 60px;
+  width: 100%;
+  font-size: 50px;
+  text-transform: uppercase;
+  font-family: "OpenSans-ExtraBold";
+}
+.header-club h2 {
+  float: left;
+  width: 45%;
+  margin-right: 55%;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  font-size: 14px;
+  font-family: "OpenSans-Regular";
+  font-weight: normal;
+}
+.header-center {
+  min-height: 780px;
+  background: url('../img/header-center.jpg') center center no-repeat;
+  background-size: cover;
+}
+.header-center h1 {
+  float: left;
+  margin-top: 60px;
+  width: 100%;
+  font-size: 50px;
+  text-transform: uppercase;
+  font-family: "OpenSans-ExtraBold";
+}
+.header-center h2 {
+  float: left;
+  width: 45%;
+  margin-right: 55%;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  font-size: 14px;
+  font-family: "OpenSans-Regular";
+  font-weight: normal;
+}
+.header-fitness {
+  min-height: 780px;
+  background: url('../img/header-fitness.jpg') center center no-repeat;
+  background-size: cover;
+}
+.header-fitness h1 {
+  float: left;
+  margin-top: 60px;
+  width: 100%;
+  font-size: 50px;
+  text-transform: uppercase;
+  font-family: "OpenSans-ExtraBold";
+}
+.header-fitness h2 {
+  float: left;
+  width: 45%;
+  margin-right: 55%;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  font-size: 14px;
+  font-family: "OpenSans-Regular";
+  font-weight: normal;
+}
 .navigation {
   float: left;
   width: 100%;
@@ -256,7 +328,7 @@ h6 {
 .btn {
   width: auto;
   box-sizing: border-box;
-  padding: 15px 46px;
+  padding: 10px 45px;
   font-size: 12px;
   letter-spacing: 1px;
   outline: none;
@@ -270,6 +342,15 @@ h6 {
 }
 .btn-green:hover {
   background: #298c29;
+}
+.btn-trans {
+  color: #31af31;
+  background: rgba(0, 0, 0, 0);
+  border: 1px solid #31af31;
+}
+.btn-trans:hover {
+  background: #31af31;
+  color: #fff;
 }
 .btn-left {
   float: left;
@@ -395,7 +476,7 @@ h6 {
   color: #000;
 }
 .mo-nav:hover .mo-line {
-  width: 22px;
+  width: 33px;
   margin-right: 5px;
 }
 .mo-line {
@@ -404,9 +485,28 @@ h6 {
   height: 2px;
   width: 0px;
   margin-right: 0px;
-  background: #31af31;
+  background: url('../img/mo-line.png') center center no-repeat;
+  background-size: cover;
   -webkit-transition: .3s linear;
   transition: .3s linear;
+}
+.mo-list {
+  float: left;
+  width: calc(100% - 38px);
+  margin-left: 38px;
+}
+.mo-row {
+  float: left;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #8d8d8d;
+}
+.mo-row:hover {
+  color: #31af31;
+}
+.mo-row.js-active {
+  color: #31af31;
 }
 .mo-txt {
   float: left;
@@ -423,6 +523,46 @@ h6 {
   float: left;
   width: 55%;
   margin-left: 5%;
+}
+.mo-program {
+  float: left;
+  width: 100%;
+  margin-top: 30px;
+}
+.mo-program h3 {
+  float: left;
+  width: 100%;
+  font-size: 18px;
+  font-weight: normal;
+  font-family: "OpenSans-Semibold";
+}
+.mo-program p {
+  float: left;
+  width: 100%;
+  margin-top: 18px;
+  font-size: 14px;
+}
+.mo-btns {
+  float: left;
+  width: 100%;
+  margin-top: 30px;
+}
+.mo-btns-icon {
+  float: right;
+}
+.mo-btns-icon img {
+  float: left;
+  height: 30px;
+  margin: 5px;
+  width: auto;
+}
+.mo-btns-icon span {
+  float: left;
+  height: 40px;
+  width: auto;
+  line-height: 40px;
+  font-size: 15px;
+  font-family: "OpenSans-Semibold";
 }
 .mo-border {
   float: left;
@@ -530,8 +670,7 @@ h6 {
 .footer {
   float: left;
   width: 100%;
-  padding-top: 50px;
-  padding-bottom: 30px;
+  padding-top: 40px;
   background: #cbcbcb;
 }
 .footation {
@@ -574,7 +713,7 @@ h6 {
 .foot-center {
   float: left;
   width: calc(100% - 410px);
-  margin: 0 60px;
+  margin: 0 60px 30px;
   height: auto;
 }
 .foot-center-navigation {
@@ -671,4 +810,565 @@ h6 {
 }
 .foot-gi:hover path {
   fill: #2281c1;
+}
+.section-news {
+  float: left;
+  width: 100%;
+}
+.section-news h2 {
+  float: left;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100%;
+  font-size: 30px;
+  font-family: "OpenSans-ExtraBold";
+}
+.new {
+  float: left;
+  width: 100%;
+  margin-bottom: 70px;
+}
+.new .new-img {
+  float: left;
+  width: 40%;
+  height: 300px;
+  margin-right: 7%;
+  box-shadow: 0px 26px 23.5px 3.5px rgba(0, 0, 0, 0.3);
+}
+.new .new-txt {
+  float: left;
+  width: 45%;
+  margin-right: 8%;
+}
+.new .new-txt h3 {
+  float: left;
+  width: 100%;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: "OpenSans-Semibold";
+}
+.new .new-txt p {
+  float: left;
+  width: 100%;
+  font-size: 13px;
+  margin-top: 15px;
+  margin-bottom: 45px;
+}
+.news-pagination {
+  float: left;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.np-box {
+  display: inline-block;
+  box-sizing: border-box;
+  border: 1px solid #c0c0c0;
+  height: 40px;
+  width: 40px;
+  font-size: 15px;
+  line-height: 30px;
+  padding: 4px 0;
+  cursor: pointer;
+  color: #000;
+}
+.np-box:hover {
+  background: #31af31;
+  color: #fff;
+}
+.new-inner {
+  float: left;
+  width: 100%;
+}
+.new-inner h2 {
+  float: left;
+  width: 70%;
+  margin-top: 20px;
+  margin-right: 30%;
+  font-size: 30px;
+  font-family: "OpenSans-ExtraBold";
+}
+.new-inner h3 {
+  float: left;
+  width: 90%;
+  margin-right: 10%;
+  font-size: 16px;
+  margin-top: 20px;
+}
+.new-inner img {
+  float: left;
+  width: 100%;
+  margin-top: 20px;
+}
+.new-inner p {
+  float: left;
+  width: 100%;
+  margin-top: 30px;
+  font-size: 14px;
+  margin-bottom: 14px;
+  white-space: pre-line;
+  word-break: break-all;
+}
+.ni-date {
+  float: left;
+  width: 100%;
+  margin-top: 30px;
+  color: #8e8e8e;
+  font-size: 13px;
+}
+.in-icons {
+  float: left;
+  width: 100%;
+  margin-bottom: 70px;
+}
+.in-icon {
+  float: left;
+  margin-right: 15px;
+  margin-top: 30px;
+  width: auto;
+  box-sizing: border-box;
+  padding: 0px 25px;
+  height: 38px;
+  cursor: pointer;
+}
+.in-icon img {
+  float: left;
+  height: 13px;
+  margin-top: 12px;
+  width: auto;
+  margin-right: 9px;
+}
+.in-icon p {
+  float: left;
+  width: auto;
+  color: #fff;
+  font-size: 13px;
+  height: 100%;
+  line-height: 38px;
+}
+.in-fb {
+  background: #4c68b3;
+}
+.in-vk {
+  background: #426b9a;
+}
+.in-vk img {
+  height: 15px;
+}
+.in-tw {
+  background: #00abed;
+}
+.club-cards {
+  float: left;
+  width: 100%;
+}
+.club-cards h2 {
+  float: left;
+  width: 100%;
+  margin-top: 50px;
+  color: rgba(56, 56, 56, 0.3);
+  font-size: 35px;
+  font-family: "OpenSans-Bold";
+}
+.club-cards h3 {
+  float: left;
+  width: 100%;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.club-elite {
+  float: left;
+  width: 100%;
+  margin-top: 40px;
+}
+.club-elite h3 {
+  float: left;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.ce-card {
+  float: left;
+  width: 35%;
+}
+.ce-card img {
+  float: left;
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 22px 22.6px 6.4px rgba(0, 0, 0, 0.16);
+}
+.ce-icons {
+  float: left;
+  width: 60%;
+  margin-left: 5%;
+}
+.ce-icon {
+  float: left;
+  width: 19%;
+  margin: 0 3%;
+  text-align: center;
+}
+.ce-icon img {
+  height: 50px;
+  width: auto;
+  margin: 0 auto 10px;
+}
+.ce-icon p {
+  font-size: 14px;
+  width: 100%;
+  min-height: 150px;
+}
+.ce-price {
+  float: left;
+  margin-left: 20px;
+  width: auto;
+  color: #31af31;
+  font-size: 22px;
+  line-height: 37px;
+}
+.club-training {
+  float: left;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.club-training h2 {
+  float: left;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: rgba(56, 56, 56, 0.3);
+  font-size: 35px;
+  font-family: "OpenSans-Bold";
+}
+.cr-left {
+  float: left;
+  width: 40%;
+  margin-right: 5%;
+}
+.cr-left p {
+  float: left;
+  width: 100%;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+.cr-left span {
+  float: left;
+  width: 100%;
+  margin-bottom: 25px;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.cr-right {
+  float: left;
+  width: 55%;
+}
+.center-procedures {
+  float: left;
+  width: 100%;
+}
+.center-procedures h2 {
+  float: left;
+  width: 100%;
+  margin-top: 50px;
+  color: rgba(56, 56, 56, 0.3);
+  font-size: 35px;
+  font-family: "OpenSans-Bold";
+  margin-bottom: 40px;
+}
+.center-procedures h3 {
+  float: left;
+  width: 100%;
+  font-size: 17px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.cp-results {
+  float: left;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.cp-result {
+  float: left;
+  width: 22%;
+  margin-right: 3%;
+}
+.cp-result span {
+  float: left;
+  width: 100%;
+  font-size: 27px;
+  color: #31af31;
+}
+.cp-result p {
+  float: left;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 13px;
+}
+.center-massage {
+  float: left;
+  width: 100%;
+  margin-top: 70px;
+  background: url('../img/center-massage.jpg') center center no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-bottom: 50px;
+}
+.center-massage h2 {
+  float: left;
+  width: 100%;
+  margin-top: 50px;
+  color: rgba(56, 56, 56, 0.3);
+  font-size: 35px;
+  font-family: "OpenSans-Bold";
+}
+.center-massage h3 {
+  float: left;
+  width: 60%;
+  margin-right: 40%;
+  font-size: 14px;
+  margin-top: 30px;
+  font-weight: normal;
+}
+.cm-boxes {
+  float: left;
+  width: 100%;
+  margin-top: 30px;
+}
+.cm-box {
+  float: left;
+  width: 100%;
+  margin-top: 20px;
+}
+.cm-box img {
+  height: 60px;
+  width: auto;
+}
+.cm-box h4 {
+  float: left;
+  width: 100%;
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-size: 19px;
+}
+.cm-box p {
+  float: left;
+  width: 80%;
+  margin-top: 20px;
+  font-size: 14px;
+}
+.cm-left img {
+  float: right;
+}
+.cm-left h4 {
+  text-align: right;
+}
+.cm-left p {
+  text-align: right;
+  margin-left: 20%;
+}
+.cm-right img {
+  float: left;
+}
+.cm-right h4 {
+  text-align: left;
+}
+.cm-right p {
+  text-align: left;
+  margin-right: 20%;
+}
+.cm-left {
+  float: left;
+  width: 33.33%;
+  margin-right: 16.66%;
+}
+.cm-center {
+  position: absolute;
+  bottom: 50px;
+  left: 33.33%;
+  width: 33.33%;
+  text-align: center;
+}
+.cm-right {
+  float: left;
+  width: 33.33%;
+  margin-left: 16.66%;
+}
+.center-gallery {
+  float: left;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+.center-gallery h3 {
+  float: left;
+  width: 100%;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.fitness-zal {
+  float: left;
+  width: 100%;
+  margin-top: 30px;
+}
+.fitness-zal h3 {
+  float: left;
+  width: 100%;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.fitness-zal h4 {
+  float: left;
+  width: 60%;
+  margin: 30px 20% 0;
+  text-align: center;
+  font-weight: normal;
+}
+.fz-boxes {
+  float: left;
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.fz-box {
+  display: block;
+  width: 20%;
+  margin: 0 3%;
+}
+.fz-box img {
+  height: 50px;
+}
+.fz-box h5 {
+  text-transform: uppercase;
+  font-size: 17px;
+  margin-top: 10px;
+}
+.fz-box p {
+  font-size: 13px;
+  margin-top: 10px;
+}
+.fitness-group {
+  float: left;
+  width: 100%;
+  margin-top: 50px;
+}
+.fitness-group h2 {
+  float: left;
+  width: 100%;
+  margin-top: 50px;
+  color: rgba(56, 56, 56, 0.3);
+  font-size: 35px;
+  font-family: "OpenSans-Bold";
+  margin-bottom: 50px;
+}
+.fitness-raspisanie {
+  float: left;
+  width: 100%;
+  margin-top: 70px;
+  height: 50px;
+  background: #31af31;
+  padding: 7px 0;
+  text-align: center;
+}
+.fitness-raspisanie h2 {
+  display: inline-block;
+  width: auto;
+  height: 100%;
+  line-height: 50px;
+  color: #fff;
+  font-size: 25px;
+  font-family: "ProximaNovaRegular";
+  font-weight: normal;
+}
+.fitness-raspisanie button {
+  height: 100%;
+  vertical-align: top;
+  padding: 0 47px 0 40px;
+  background: #fff;
+  margin: 0 40px;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+  border: 1px solid #31af31;
+}
+.fitness-raspisanie button svg {
+  float: left;
+  height: 20px;
+  width: auto;
+  margin: 15px 10px 15px 0;
+}
+.fitness-raspisanie button path {
+  fill: #31af31;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+.fitness-raspisanie button p {
+  float: left;
+  width: auto;
+  height: 50px;
+  margin-top: 18px;
+  font-size: 13px;
+  color: #31af31;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+.fitness-raspisanie button:hover {
+  background: #31af31;
+  border: 1px solid #fff;
+}
+.fitness-raspisanie button:hover path {
+  fill: #fff;
+}
+.fitness-raspisanie button:hover p {
+  color: #fff;
+}
+.fitness-card {
+  float: left;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+.fitness-card h2 {
+  float: left;
+  width: 100%;
+  margin-top: 50px;
+  color: rgba(56, 56, 56, 0.3);
+  font-size: 35px;
+  font-family: "OpenSans-Bold";
+  margin-bottom: 50px;
+}
+.fc-left {
+  float: left;
+  width: 35%;
+  margin-right: 9%;
+  margin-left: 8%;
+}
+.fc-left img {
+  float: left;
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 22px 22.6px 6.4px rgba(0, 0, 0, 0.16);
+}
+.fc-right {
+  float: left;
+  width: 45%;
+  margin-right: 3%;
+}
+.fc-right p {
+  float: left;
+  margin-bottom: 40px;
+  width: 80%;
+  margin-right: 20%;
+  font-size: 14px;
 }
