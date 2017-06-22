@@ -19,7 +19,7 @@ button{
     font-family: @p-b;
 }
 
-input{
+input, textarea{
     font-family: @o-r;
 }
 
@@ -102,6 +102,15 @@ h1, h2, h3, h4, h5, h6{ font-family: @o-r; font-weight: bold; }
 .header-fitness{ min-height: 780px; background: url('../img/header-fitness.jpg') center center no-repeat; background-size: cover;
     h1{ float: left; margin-top: 60px; width: 100%; font-size: 50px; text-transform: uppercase; font-family: @o-x; }
     h2{ float: left; width: 45%; margin-right: 55%; margin-top: 40px; margin-bottom: 60px; font-size: 14px; font-family: @o-r; font-weight: normal; }
+}
+
+.header-contacts{ min-height: 580px; background: url('../img/header-contacts.jpg') center center no-repeat; background-size: cover;
+    h1{ float: left; margin-top: 100px; margin-bottom: 20px; width: 100%; font-size: 50px; font-family: @o-x; }
+}
+
+.contact-row{ float: left; width: 100%; margin-top: 20px;
+    img{ float: left; height: 24px; width: auto; margin: 3px 0; }
+    p{ float: left; margin-left: 5px; width: auto; font-size: 14px; line-height: 30px; height: 30px; }
 }
 
 .navigation{ float: left; width: 100%; margin-top: 50px; }
@@ -242,9 +251,21 @@ h1, h2, h3, h4, h5, h6{ font-family: @o-r; font-weight: bold; }
     img{ height: 30px; margin: 5px 0 15px; }
 }
 
-.main-map{ float: left; width: 100%; height: 300px; 
-    iframe{ float: left; width: 100%; height: 100%; }
+.main-map{ float: left; width: 100%; height: 400px; }
+
+.map-layer{ float: left; width: 100%; height: 0; position: relative; }
+
+.map-back{ position: absolute; top: 0; left: 0; height: 400px; width: 50%; background: rgba(0,0,0,0.5); z-index: 5; }
+
+.map-box{ float: left; width: 80%; margin: 25px 10%; height: 350px; background: #fff; box-sizing: border-box; padding: 40px 30px;
+    h4{ float: left; width: 100%; text-align: center; font-size: 14px; font-family: @o-s; font-weight: normal; }
 }
+
+.mod input{ float: left; width: 100%; margin-top: 10px; box-sizing: border-box; padding: 10px 20px; border: none; outline: none; background: #e6e6e6; color: #000; border: solid 1px #818181;  }
+
+.mod textarea{ float: left; width: 100%; max-width: 100%; height: 80px; max-height: 80px; margin-top: 10px; box-sizing: border-box; padding: 10px 20px; border: none; outline: none; background: #e6e6e6; color: #000; border: solid 1px #818181; }
+
+.mod-wrap{ float: left; width: 100%; margin-top: 20px; text-align: center; }
 
 .footer{ float: left; width: 100%; padding-top: 40px; background: #cbcbcb; }
 
