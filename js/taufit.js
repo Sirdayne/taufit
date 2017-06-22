@@ -29,7 +29,7 @@ Vue.component('vue-navigation', {
                     <div class="nav-address">
                         <p>+7 727 301 30 00</p>
                         <p>+7 708 480 60 36</p>
-                        <span>заказать звонок</span>
+                        <span class="js-phone">заказать звонок</span>
                     </div>
 
                 </div>
@@ -215,7 +215,7 @@ Vue.component('vue-footer', {
                     <div class="foot-right">
                         <p>+7 727 301 30 00</p>
                         <p>+7 708 480 60 36</p>
-                        <span>заказать звонок</span>
+                        <span class="js-phone">заказать звонок</span>
                     </div>
 
                 </div>
@@ -245,9 +245,7 @@ Vue.component('vue-modals', {
 
     <div class="modal-wrapper">
         <div class="modal modal-phone">
-            <!--<div class="modal-close"></div>-->
-
-            <div class="modal-title">Заполните форму ниже и получите бесплатную консультацию от нашего специалиста</div>
+            <div class="modal-close"></div>
 
             <form method="post" action="">
                 <!-- Hidden Required Fields -->
@@ -257,18 +255,22 @@ Vue.component('vue-modals', {
                 <input type="hidden" name="form_subject" value="Заявка">
                 <!-- END Hidden Required Fields -->
 
-                <div class="inputs-row">
-                    <input type="text" placeholder="Имя" required>
-                    <input type="tel" class="client-tel" placeholder="Телефон" required>
-                    <button class="btn btn-blue">ОТПРАВИТЬ</button>
+                <h4>Оставьте ваши контакты
+                и мы вам перезвоним</h4>
+
+                <input type="text" placeholder="Имя" required>
+
+                <input type="text" placeholder="Телефон" required>
+
+                <div class="mod-wrap">
+                    <button class="btn btn-center btn-green">ОТПРАВИТЬ</button>
                 </div>
+
             </form>
         </div>
 
         <div class="modal modal-message">
-            <!--<div class="modal-close"></div>-->
-
-            <div class="modal-title">Задайте свой вопрос и получите ответ от наших специалистов</div>
+            <div class="modal-close"></div>
 
             <form method="post" action="">
                 <!-- Hidden Required Fields -->
@@ -278,13 +280,18 @@ Vue.component('vue-modals', {
                 <input type="hidden" name="form_subject" value="Заявка">
                 <!-- END Hidden Required Fields -->
 
-                <div class="modal-inputs">
-                    <input type="text" placeholder="Имя" required>
-                    <input type="email" placeholder="E-mail" required>
-                    <button class="btn btn-blue btn-left">ОТПРАВИТЬ</button>
-                </div>
+                <h4>Задайте интересующий вопрос, и наши менеджеры
+                            позвонят на указанный вами номер</h4>
+
+                <input type="text" placeholder="Имя" required>
+
+                <input type="text" placeholder="Телефон" required>
 
                 <textarea placeholder="Сообщение"></textarea>
+
+                <div class="mod-wrap">
+                    <button class="btn btn-center btn-green">ОТПРАВИТЬ</button>
+                </div>
 
             </form>
         </div>
@@ -307,10 +314,17 @@ new Vue({
 
 $(document).ready(function () {
 
-    // NAVIGATION
+    // MODALS
 
-    $('body').on('click', '.nav-mob', function () {
-        $('.navigation-row').toggleClass('nav-active');
-        $(this).toggleClass('nav-active');
+    $('body').on('click', '.js-phone', function () {
+        $('.modal-phone, .modal-back').show(300);
+    });
+
+    $('body').on('click', '.js-message', function () {
+        $('.modal-message, .modal-back').show(300);
+    });
+
+    $('body').on('click', '.modal-back, .modal-close', function () {
+        $('.modal, .modal-back').hide(300);
     });
 });

@@ -1,0 +1,18 @@
+<svg width="459" height="459" viewBox="0 0 459 459" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>phone</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(523 1201)">
+<g id="phone">
+<g id="Group">
+<g id="call">
+<g id="Vector">
+<use xlink:href="#path0_fill" transform="translate(-523 -1201)"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 91.8 198.9C 127.5 270.3 188.7 328.95 260.1 367.2L 316.2 311.1C 323.849 303.451 334.05 300.901 341.7 306C 369.75 316.2 400.349 321.3 433.5 321.3C 448.8 321.3 459 331.5 459 346.8L 459 433.5C 459 448.8 448.8 459 433.5 459C 193.8 459 0 265.2 0 25.5C 0 10.2 10.2 0 25.5 0L 114.75 0C 130.05 0 140.25 10.2 140.25 25.5C 140.25 56.1 145.35 86.7 155.55 117.3C 158.1 124.95 155.55 135.15 150.45 142.8L 91.8 198.9Z"/>
+</defs>
+</svg>
