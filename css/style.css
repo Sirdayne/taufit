@@ -144,6 +144,11 @@ h6 {
 .thx p {
   font-size: 13px;
 }
+.btn-wrap {
+  float: left;
+  width: 100%;
+  text-align: center;
+}
 #vue-app {
   float: left;
   width: 100%;
@@ -413,6 +418,8 @@ h6 {
 }
 .tsection,
 .main-advantages,
+.main-cards,
+.main-trainers,
 .main-options,
 .main-news {
   float: left;
@@ -429,6 +436,91 @@ h6 {
   color: rgba(56, 56, 56, 0.3);
   font-size: 35px;
   font-family: "OpenSans-Bold";
+}
+.main-cards {
+  background: #ebebeb;
+  padding-bottom: 50px;
+}
+.main-cards h2 {
+  float: left;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: rgba(56, 56, 56, 0.3);
+  font-size: 35px;
+  font-family: "OpenSans-Bold";
+}
+.main-cards .btn-wrap {
+  margin-top: 40px;
+}
+.main-trainers {
+  background: #ebebeb;
+}
+.main-trainers .wrap {
+  padding-top: 120px;
+  position: relative;
+}
+.main-trainers h2 {
+  position: absolute;
+  width: auto;
+  top: 60px;
+  left: 200px;
+  color: rgba(56, 56, 56, 0.3);
+  font-size: 35px;
+  font-family: "OpenSans-Bold";
+  z-index: 2;
+}
+.mt-left {
+  float: left;
+  width: 30%;
+  height: 500px;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+  box-shadow: 0.5px 1px 0.5px rgba(49, 175, 49, 0.4);
+  position: relative;
+  z-index: 1;
+  background: url('../img/slide-trainer.png') center center no-repeat;
+  background-size: contain;
+}
+.mt-right {
+  float: left;
+  width: 65%;
+  margin-left: 5%;
+}
+.mt-title {
+  float: left;
+  width: calc(100% - 80px);
+  margin-left: 80px;
+  position: relative;
+}
+.mt-title h3 {
+  float: left;
+  width: 100%;
+  font-size: 20px;
+}
+.mt-title h4 {
+  float: left;
+  width: 100%;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #31af31;
+}
+.mt-title p {
+  float: left;
+  width: 80%;
+  margin-top: 14px;
+  font-size: 14px;
+  line-height: 22px;
+}
+.mt-line {
+  position: absolute;
+  top: 18px;
+  left: -80px;
+  height: 2px;
+  width: 70px;
+  margin-right: 0px;
+  background: url('../img/mo-line.png') center center no-repeat;
+  background-size: cover;
 }
 .ma-box {
   float: left;
@@ -1463,4 +1555,28 @@ h6 {
   width: 80%;
   margin-right: 20%;
   font-size: 14px;
+}
+.card-slide img {
+  float: left;
+  width: 40%;
+  height: auto;
+  margin-right: 5%;
+  box-shadow: 6px 12px 12.6px 6px rgba(0, 0, 0, 0.16);
+}
+.card-slide-txt {
+  float: left;
+  width: 55%;
+}
+.card-slide-txt p {
+  float: left;
+  width: 100%;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.card-slide-txt span {
+  float: left;
+  margin-top: 10px;
+  width: 100%;
+  font-size: 15px;
+  color: #31af31;
 }

@@ -116,7 +116,7 @@ Vue.component('vue-footer', {
             <div class="wrap">
                 <div class="footation">
                     <div class="foot-left">
-                        <a href=""><img src="./img/taufit-logo.svg" alt=""></a>
+                        <a href="index.html"><img src="./img/taufit-logo.svg" alt=""></a>
 
                         <div class="foot-icons">
 

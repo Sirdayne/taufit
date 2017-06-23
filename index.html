@@ -132,6 +132,38 @@
             </div>
         </section>
 
+        <section class="main-cards">
+            <div class="wrap">
+                <h2>КЛУБНЫЕ КАРТЫ</h2>
+
+                <div class="cards-slider">
+                    <div class="cards-slide">
+                        <img src="./img/cards/card1.jpg" alt="">
+                    </div>
+                    <div class="cards-slide">
+                        <img src="./img/cards/card2.jpg" alt="">
+                    </div>
+                    <div class="cards-slide">
+                        <img src="./img/cards/card3.jpg" alt="">
+                    </div>
+                    <div class="cards-slide">
+                        <img src="./img/cards/card4.jpg" alt="">
+                    </div>
+                    <div class="cards-slide">
+                        <img src="./img/cards/card5.jpg" alt="">
+                    </div>
+                    <div class="cards-slide">
+                        <img src="./img/cards/card3.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="btn-wrap">
+                    <button class="btn btn-center btn-green">ПОСМОТРЕТЬ ПОДРОБНЕЕ</button>
+                </div>
+
+            </div>
+        </section>
+
         <section class="main-news">
             <div class="wrap">
                 <h2>НОВОСТИ</h2>
@@ -142,7 +174,7 @@
 
                     <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu</p>
 
-                    <a href="">подробнее</a>
+                    <a href="new.html">подробнее</a>
                 </div>
 
                 <div class="main-new">
@@ -151,7 +183,7 @@
 
                     <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu</p>
 
-                    <a href="">подробнее</a>
+                    <a href="new.html">подробнее</a>
                 </div>
 
                 <div class="main-new">
@@ -160,7 +192,42 @@
 
                     <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu</p>
 
-                    <a href="">подробнее</a>
+                    <a href="new.html">подробнее</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-trainers">
+            <div class="wrap">
+                <h2>ТРЕНЕРА</h2>
+
+                <div class="mt-left"></div>
+
+                <div class="mt-right">
+                    <div class="mt-title">
+                        <h3>ЗАУРЕ НУРГАЛИЕВА</h3>
+                        <div class="mt-line"></div>
+
+                        <h4>Йога и Фитнес</h4>
+
+                        <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu
+                        Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu</p>
+                    </div>
+                    <div class="trainers-slider">
+                        <div class="trainers-slide">
+                            <img src="./img/slide-trainer.png" alt="">
+                        </div>
+                        <div class="trainers-slide">
+                            <img src="./img/slide-trainer2.png" alt="">
+                        </div>
+                        <div class="trainers-slide">
+                            <img src="./img/slide-trainer3.png" alt="">
+                        </div>
+                        <div class="trainers-slide">
+                            <img src="./img/slide-trainer2.png" alt="">
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </section>
@@ -244,17 +311,67 @@
 
             /* SLICK SLIDERS */
 
-            $('.slick-sliders').slick({
+             $('.cards-slider').slick({
                 centerMode: false,
-                slidesToShow: 1,
+                slidesToShow: 5,
+                speed: 500,
+                centerPadding: '0px',
+                arrows: true,
+                dots: true,
+                autoplay: false,
+                autoplaySpeed: 2800,
+                customPaging : function(slider, i) {
+                    var thumb = ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''];
+                    return '<div class="slick-thumb">'+thumb[i]+'</div>';
+                }
+            });
+
+            $('.cards-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+                $('.cards-slide').removeClass('cards-pre');
+                $('.cards-slide').removeClass('cards-center');
+                $('.cards-slide').removeClass('cards-last');
+            });
+
+            $('.cards-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
+                $('.cards-slide.slick-active').eq(0).addClass('cards-last');
+                $('.cards-slide.slick-active').eq(1).addClass('cards-pre');
+                $('.cards-slide.slick-active').eq(2).addClass('cards-center');
+                $('.cards-slide.slick-active').eq(3).addClass('cards-pre');
+                $('.cards-slide.slick-active').eq(4).addClass('cards-last');
+            });
+
+            $('.cards-slide.slick-active').eq(0).addClass('cards-last');
+            $('.cards-slide.slick-active').eq(1).addClass('cards-pre');
+            $('.cards-slide.slick-active').eq(2).addClass('cards-center');
+            $('.cards-slide.slick-active').eq(3).addClass('cards-pre');
+            $('.cards-slide.slick-active').eq(4).addClass('cards-last');
+
+            $('.trainers-slider').slick({
+                centerMode: false,
+                slidesToShow: 3,
+                speed: 500,
                 centerPadding: '0px',
                 arrows: true,
                 dots: false,
                 autoplay: false,
                 autoplaySpeed: 2800,
+                customPaging : function(slider, i) {
+                    var thumb = ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''];
+                    return '<div class="slick-thumb">'+thumb[i]+'</div>';
+                }
             });
 
+            $('.trainers-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+                $('.trainers-slide').removeClass('trainers-active');
+            });
 
+            $('.trainers-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
+                $('.trainers-slide.slick-active').eq(1).addClass('trainers-active');
+
+            });
+
+            $('.trainers-slide.slick-active').eq(1).addClass('trainers-active');
+            //$(.'mt-left').addClass('.mt-'+index);
         });
 
     </script>
