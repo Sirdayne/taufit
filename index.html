@@ -216,15 +216,27 @@
                     <div class="trainers-slider">
                         <div class="trainers-slide">
                             <img src="./img/slide-trainer.png" alt="">
+                            <h3>ЗАУРЕ НУРГАЛИЕВА</h3>
+                            <h4>Йога и Фитнес</h4>
+                            <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae praesentium modi, minus mollitia asperiores perspiciatis voluptatem nisi quisquam, aut voluptate consectetur, magni sit autem impedit a animi? Ducimus, itaque laboriosam.</P>
                         </div>
                         <div class="trainers-slide">
                             <img src="./img/slide-trainer2.png" alt="">
+                            <h3>Тренер 2</h3>
+                            <h4>Йога и Фитнес 2</h4>
+                            <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum deserunt ut debitis, totam iusto iste excepturi odio distinctio voluptatibus nam consectetur, architecto in ea soluta ratione asperiores inventore necessitatibus tempore!</P>
                         </div>
                         <div class="trainers-slide">
                             <img src="./img/slide-trainer3.png" alt="">
+                            <h3>Тренер 3</h3>
+                            <h4>Йога и Фитнес 3</h4>
+                            <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor reiciendis est itaque commodi necessitatibus quas eaque porro, minima iure, laborum, quaerat vero veritatis! Facere modi corporis magni accusamus at, quis.</P>
                         </div>
                         <div class="trainers-slide">
                             <img src="./img/slide-trainer2.png" alt="">
+                            <h3>Тренер 2</h3>
+                            <h4>Йога и Фитнес 2</h4>
+                            <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum deserunt ut debitis, totam iusto iste excepturi odio distinctio voluptatibus nam consectetur, architecto in ea soluta ratione asperiores inventore necessitatibus tempore!</P>
                         </div>
 
                     </div>
@@ -340,12 +352,15 @@
                 $('.cards-slide.slick-active').eq(4).addClass('cards-last');
             });
 
+            /* cards-slider init */
             $('.cards-slide.slick-active').eq(0).addClass('cards-last');
             $('.cards-slide.slick-active').eq(1).addClass('cards-pre');
             $('.cards-slide.slick-active').eq(2).addClass('cards-center');
             $('.cards-slide.slick-active').eq(3).addClass('cards-pre');
             $('.cards-slide.slick-active').eq(4).addClass('cards-last');
 
+
+            /* trainers-slider */
             $('.trainers-slider').slick({
                 centerMode: false,
                 slidesToShow: 3,
@@ -368,10 +383,23 @@
             $('.trainers-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
                 $('.trainers-slide.slick-active').eq(1).addClass('trainers-active');
 
+                /* change mt-left */
+                src = $('.trainers-slide.slick-active img').eq(1).attr('src');
+                $('.mt-left').attr('style', 'background: url("'+src+'") center center no-repeat; background-size: contain;');
+
+                $('.mt-title h3').html( $('.trainers-slide.slick-active h3').eq(1).html() );
+                $('.mt-title h4').html( $('.trainers-slide.slick-active h4').eq(1).html() );
+                $('.mt-title p').html( $('.trainers-slide.slick-active p').eq(1).html() );
+
             });
 
+            /* trainers-slider init */
             $('.trainers-slide.slick-active').eq(1).addClass('trainers-active');
-            //$(.'mt-left').addClass('.mt-'+index);
+
+            var src = $('.trainers-slide.slick-active img').eq(1).attr('src');
+
+            $('.mt-left').attr('style', 'background: url("'+src+'") center center no-repeat; background-size: contain;');
+
         });
 
     </script>
