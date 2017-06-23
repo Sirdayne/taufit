@@ -328,4 +328,9 @@ $(document).ready(function () {
     $('body').on('click', '.modal-back, .modal-close', function () {
         $('.modal, .modal-back').hide(300);
     });
+
+    $('body').on('click', '.mo-nav', function () {
+        $('.mo-nav').removeClass('js-active');
+        $(this).addClass('js-active');
+    });
 });

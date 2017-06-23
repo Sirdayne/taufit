@@ -580,12 +580,15 @@ h6 {
   transition: .3s linear;
   font-family: "OpenSans-Semibold";
 }
-.mo-nav:hover p {
+.mo-nav.js-active p {
   color: #000;
 }
-.mo-nav:hover .mo-line {
+.mo-nav.js-active .mo-line {
   width: 33px;
   margin-right: 5px;
+}
+.mo-nav:hover p {
+  color: #000;
 }
 .mo-line {
   float: left;
@@ -602,6 +605,10 @@ h6 {
   float: left;
   width: calc(100% - 38px);
   margin-left: 38px;
+  display: none;
+}
+.js-active .mo-list {
+  display: block;
 }
 .mo-row {
   float: left;

@@ -215,15 +215,21 @@ h1, h2, h3, h4, h5, h6{ font-family: @o-r; font-weight: bold; }
 .mo-nav{ float: left; width: 100%; margin-top: 10px; cursor: pointer; 
     p{ float: left; width: auto; font-size: 18px; color: rgba(0, 0, 0, 0.5); text-transform: uppercase; -webkit-transition: .3s linear; transition: .3s linear; font-family: @o-s; }
     
-    &:hover{ 
+    &.js-active{
         p{ color: #000; }
         .mo-line{ width: 33px; margin-right: 5px; }
+    }
+
+    &:hover{
+        p{ color: #000; }
     }
 }
 
 .mo-line{ float: left; margin-top: 16px; height: 2px; width: 0px; margin-right: 0px; background: url('../img/mo-line.png') center center no-repeat; background-size: cover; -webkit-transition: .3s linear; transition: .3s linear; }
 
-.mo-list{ float: left; width: ~'calc(100% - 38px)'; margin-left: 38px; }
+.mo-list{ float: left; width: ~'calc(100% - 38px)'; margin-left: 38px; display: none; }
+
+.js-active .mo-list{ display: block; }
 
 .mo-row{ float: left; width: 100%; margin-top: 10px; font-size: 14px; color: #8d8d8d;
     &:hover{ color: @green; }
