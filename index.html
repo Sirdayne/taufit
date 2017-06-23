@@ -210,8 +210,7 @@
 
                         <h4>Йога и Фитнес</h4>
 
-                        <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu
-                        Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu</p>
+                        <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu</p>
                     </div>
                     <div class="trainers-slider">
                         <div class="trainers-slide">
@@ -302,6 +301,11 @@
                     lng: 71.468200
                 },
                 zoom: 14,
+                styles: [{
+                    stylers: [{
+                        saturation: -100
+                    }]
+                }]
             });
 
             var marker = new google.maps.Marker({
@@ -310,7 +314,8 @@
                     lng: 71.483206
                 },
                 map: map,
-                title: 'TauFit'
+                title: 'TauFit',
+                icon: 'marker.png',
             });
         }
 
@@ -323,7 +328,7 @@
 
             /* SLICK SLIDERS */
 
-             $('.cards-slider').slick({
+            $('.cards-slider').slick({
                 centerMode: false,
                 slidesToShow: 5,
                 speed: 500,
@@ -332,19 +337,19 @@
                 dots: true,
                 autoplay: false,
                 autoplaySpeed: 2800,
-                customPaging : function(slider, i) {
+                customPaging: function(slider, i) {
                     var thumb = ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''];
-                    return '<div class="slick-thumb">'+thumb[i]+'</div>';
+                    return '<div class="slick-thumb">' + thumb[i] + '</div>';
                 }
             });
 
-            $('.cards-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+            $('.cards-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
                 $('.cards-slide').removeClass('cards-pre');
                 $('.cards-slide').removeClass('cards-center');
                 $('.cards-slide').removeClass('cards-last');
             });
 
-            $('.cards-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
+            $('.cards-slider').on('afterChange', function(event, slick, currentSlide, nextSlide) {
                 $('.cards-slide.slick-active').eq(0).addClass('cards-last');
                 $('.cards-slide.slick-active').eq(1).addClass('cards-pre');
                 $('.cards-slide.slick-active').eq(2).addClass('cards-center');
@@ -368,28 +373,28 @@
                 centerPadding: '0px',
                 arrows: true,
                 dots: false,
-                autoplay: false,
+                autoplay: true,
                 autoplaySpeed: 2800,
-                customPaging : function(slider, i) {
+                customPaging: function(slider, i) {
                     var thumb = ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''];
-                    return '<div class="slick-thumb">'+thumb[i]+'</div>';
+                    return '<div class="slick-thumb">' + thumb[i] + '</div>';
                 }
             });
 
-            $('.trainers-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+            $('.trainers-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
                 $('.trainers-slide').removeClass('trainers-active');
             });
 
-            $('.trainers-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
+            $('.trainers-slider').on('afterChange', function(event, slick, currentSlide, nextSlide) {
                 $('.trainers-slide.slick-active').eq(1).addClass('trainers-active');
 
                 /* change mt-left */
                 src = $('.trainers-slide.slick-active img').eq(1).attr('src');
-                $('.mt-left').attr('style', 'background: url("'+src+'") center center no-repeat; background-size: contain;');
+                $('.mt-left').attr('style', 'background: url("' + src + '") center center no-repeat; background-size: contain;');
 
-                $('.mt-title h3').html( $('.trainers-slide.slick-active h3').eq(1).html() );
-                $('.mt-title h4').html( $('.trainers-slide.slick-active h4').eq(1).html() );
-                $('.mt-title p').html( $('.trainers-slide.slick-active p').eq(1).html() );
+                $('.mt-title h3').html($('.trainers-slide.slick-active h3').eq(1).html());
+                $('.mt-title h4').html($('.trainers-slide.slick-active h4').eq(1).html());
+                $('.mt-title p').html($('.trainers-slide.slick-active p').eq(1).html());
 
             });
 
@@ -398,7 +403,11 @@
 
             var src = $('.trainers-slide.slick-active img').eq(1).attr('src');
 
-            $('.mt-left').attr('style', 'background: url("'+src+'") center center no-repeat; background-size: contain;');
+            $('.mt-left').attr('style', 'background: url("' + src + '") center center no-repeat; background-size: contain;');
+
+            $('.mt-title h3').html($('.trainers-slide.slick-active h3').eq(1).html());
+            $('.mt-title h4').html($('.trainers-slide.slick-active h4').eq(1).html());
+            $('.mt-title p').html($('.trainers-slide.slick-active p').eq(1).html());
 
         });
 

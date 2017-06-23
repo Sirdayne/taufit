@@ -119,6 +119,11 @@
                     lng: 71.468200
                 },
                 zoom: 14,
+                styles: [{
+                    stylers: [{
+                        saturation: -100
+                    }]
+                }]
             });
 
             var marker = new google.maps.Marker({
@@ -127,7 +132,8 @@
                     lng: 71.483206
                 },
                 map: map,
-                title: 'TauFit'
+                title: 'TauFit',
+                icon: 'marker.png',
             });
         }
 

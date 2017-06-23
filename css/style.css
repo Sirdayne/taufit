@@ -479,8 +479,7 @@ h6 {
   box-shadow: 0.5px 1px 0.5px rgba(49, 175, 49, 0.4);
   position: relative;
   z-index: 1;
-  background: url('../img/slide-trainer.png') center center no-repeat;
-  background-size: contain;
+  /*background: url('../img/slide-trainer.png') center center no-repeat; background-size: contain;*/
 }
 .mt-right {
   float: left;
@@ -727,6 +726,9 @@ h6 {
   font-family: "OpenSans-Bold";
   margin-top: 30px;
   text-decoration: underline;
+}
+.main-new a:hover {
+  color: #31af31;
 }
 .mn-img {
   float: left;
