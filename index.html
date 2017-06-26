@@ -240,6 +240,33 @@
 
                     </div>
                 </div>
+
+                <div class="mt-slider">
+                    <div class="mt-slide">
+                        <img src="./img/slide-trainer.png" alt="">
+                        <h3>ЗАУРЕ НУРГАЛИЕВА</h3>
+                        <h4>Йога и Фитнес</h4>
+                        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae praesentium modi, minus mollitia asperiores perspiciatis voluptatem nisi quisquam, aut voluptate consectetur, magni sit autem impedit a animi? Ducimus, itaque laboriosam.</P>
+                    </div>
+                    <div class="mt-slide">
+                        <img src="./img/slide-trainer2.png" alt="">
+                        <h3>Тренер 2</h3>
+                        <h4>Йога и Фитнес 2</h4>
+                        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum deserunt ut debitis, totam iusto iste excepturi odio distinctio voluptatibus nam consectetur, architecto in ea soluta ratione asperiores inventore necessitatibus tempore!</P>
+                    </div>
+                    <div class="mt-slide">
+                        <img src="./img/slide-trainer3.png" alt="">
+                        <h3>Тренер 3</h3>
+                        <h4>Йога и Фитнес 3</h4>
+                        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor reiciendis est itaque commodi necessitatibus quas eaque porro, minima iure, laborum, quaerat vero veritatis! Facere modi corporis magni accusamus at, quis.</P>
+                    </div>
+                    <div class="mt-slide">
+                        <img src="./img/slide-trainer2.png" alt="">
+                        <h3>Тренер 2</h3>
+                        <h4>Йога и Фитнес 2</h4>
+                        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum deserunt ut debitis, totam iusto iste excepturi odio distinctio voluptatibus nam consectetur, architecto in ea soluta ratione asperiores inventore necessitatibus tempore!</P>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -337,39 +364,73 @@
                 dots: true,
                 autoplay: false,
                 autoplaySpeed: 2800,
-                responsive: [
-                {
-                  breakpoint: 1000,
-                  settings: {
-                    slidesToShow: 1,
-                  }
-                }],
+                responsive: [{
+                        breakpoint: 1040,
+                        settings: {
+                            slidesToShow: 3,
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 1,
+                        }
+                    }
+                ],
                 customPaging: function(slider, i) {
                     var thumb = ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''];
                     return '<div class="slick-thumb">' + thumb[i] + '</div>';
                 }
             });
 
-            $('.cards-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
-                $('.cards-slide').removeClass('cards-pre');
-                $('.cards-slide').removeClass('cards-center');
-                $('.cards-slide').removeClass('cards-last');
-            });
+            if ($(window).width() > 1022) {
+                (function($) {
 
-            $('.cards-slider').on('afterChange', function(event, slick, currentSlide, nextSlide) {
-                $('.cards-slide.slick-active').eq(0).addClass('cards-last');
-                $('.cards-slide.slick-active').eq(1).addClass('cards-pre');
-                $('.cards-slide.slick-active').eq(2).addClass('cards-center');
-                $('.cards-slide.slick-active').eq(3).addClass('cards-pre');
-                $('.cards-slide.slick-active').eq(4).addClass('cards-last');
-            });
+                    $('.cards-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+                        $('.cards-slide').removeClass('cards-pre');
+                        $('.cards-slide').removeClass('cards-center');
+                        $('.cards-slide').removeClass('cards-last');
+                    });
 
-            /* cards-slider init */
-            $('.cards-slide.slick-active').eq(0).addClass('cards-last');
-            $('.cards-slide.slick-active').eq(1).addClass('cards-pre');
-            $('.cards-slide.slick-active').eq(2).addClass('cards-center');
-            $('.cards-slide.slick-active').eq(3).addClass('cards-pre');
-            $('.cards-slide.slick-active').eq(4).addClass('cards-last');
+                    $('.cards-slider').on('afterChange', function(event, slick, currentSlide, nextSlide) {
+                        $('.cards-slide.slick-active').eq(0).addClass('cards-last');
+                        $('.cards-slide.slick-active').eq(1).addClass('cards-pre');
+                        $('.cards-slide.slick-active').eq(2).addClass('cards-center');
+                        $('.cards-slide.slick-active').eq(3).addClass('cards-pre');
+                        $('.cards-slide.slick-active').eq(4).addClass('cards-last');
+                    });
+
+                    /* cards-slider init */
+                    $('.cards-slide.slick-active').eq(0).addClass('cards-last');
+                    $('.cards-slide.slick-active').eq(1).addClass('cards-pre');
+                    $('.cards-slide.slick-active').eq(2).addClass('cards-center');
+                    $('.cards-slide.slick-active').eq(3).addClass('cards-pre');
+                    $('.cards-slide.slick-active').eq(4).addClass('cards-last');
+
+                })(jQuery);
+            }
+            else {
+                (function($) {
+
+
+                    $('.cards-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+                        $('.cards-slide').removeClass('cards-pre');
+                        $('.cards-slide').removeClass('cards-center');
+                        $('.cards-slide').removeClass('cards-last');
+                    });
+
+                    $('.cards-slider').on('afterChange', function(event, slick, currentSlide, nextSlide) {
+                        $('.cards-slide.slick-active').eq(0).addClass('cards-pre');
+                        $('.cards-slide.slick-active').eq(1).addClass('cards-center');
+                        $('.cards-slide.slick-active').eq(2).addClass('cards-pre');
+                    });
+
+                    /* cards-slider init */
+                    $('.cards-slide.slick-active').eq(0).addClass('cards-pre');
+                    $('.cards-slide.slick-active').eq(1).addClass('cards-center');
+                    $('.cards-slide.slick-active').eq(2).addClass('cards-pre');
+                })(jQuery);
+            }
 
 
             /* trainers-slider */
@@ -416,6 +477,18 @@
             $('.mt-title h4').html($('.trainers-slide.slick-active h4').eq(1).html());
             $('.mt-title p').html($('.trainers-slide.slick-active p').eq(1).html());
 
+
+            /* mt SLIDER */
+            $('.mt-slider').slick({
+                centerMode: false,
+                slidesToShow: 1,
+                speed: 500,
+                centerPadding: '0px',
+                arrows: true,
+                dots: false,
+                autoplay: true,
+                autoplaySpeed: 2800
+            });
         });
 
     </script>
