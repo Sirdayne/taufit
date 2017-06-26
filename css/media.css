@@ -76,8 +76,6 @@
     .footer-gi{ text-align: center; margin-top: 20px; }
     .foot-gi{ display: inline-block; float: none; }
 
-    .cards-slider .slick-track{ height: 220px; padding: 00px 0 0; }
-
     .mf-box{ width: 49%; margin: 25px 0; }
     .mf-box p{ margin: 0 auto; }
 
@@ -168,6 +166,9 @@
     .fitness-raspisanie h2{ width: 100%; font-size: 15px; }
 
     .mo-btns button{ padding: 10px 14px; }
+
+    .mt-slider{ display: block; }
+    .mt-left, .mt-right{ display: none; }
 }
 
 @media only screen and (max-width : 500px) {

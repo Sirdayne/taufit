@@ -464,6 +464,23 @@
     background-size: contain;
 }
 
+/* mt slider */
+
+.mt-slider{ display: none; width: 80%; margin: 50px 10%; position: relative; }
+
+.mt-slider .slick-track{ padding: 20px 0; }
+
+.mt-slider .slick-prev{
+    top: 135px;
+    background: url(../img/icons/arrow-left.svg) center center no-repeat;
+    background-size: contain;
+}
+.mt-slider .slick-next{
+    top: 135px;
+    background: url(../img/icons/arrow-right.svg) center center no-repeat;
+    background-size: contain;
+}
+
 /* 1 card slider */
 .card-slider{ width: 80%; margin: 50px 10%; }
 
@@ -479,10 +496,17 @@
     .card-slide img{ width: 60%; margin: 30px 20%; }
     .card-slider .slick-prev, .card-slider .slick-next{ top: 145px; }
 
+    .trainers-slider .slick-prev, .trainers-slider .slick-next{ height: 30px; width: 30px; }
+    .trainers-slider .slick-prev{ top: 95px; left: -40px; }
+    .trainers-slider .slick-next{ top: 95px; right: -40px; }
 
+    .cards-pre img{ opacity: .7; transform: scale(.9); z-index: 2; }
+    .cards-center img{ opacity: 1; transform: scale(1.2); z-index: 3;}
 }
 @media only screen and (max-width : 600px) {
     .gallery-slider .slick-prev, .gallery-slider .slick-next{ top: 45px; }
+
+    .cards-slider .slick-track{ height: auto; padding: 0; }
 }
 @media only screen and (max-width : 500px) {
     .gallery-slider .slick-prev, .gallery-slider .slick-next{ height: 30px; width: 30px; }
@@ -492,17 +516,20 @@
     .gallery-slider .slick-dots li{ width: 15px; }
     .gallery-slider .slick-thumb{ width: 15px; }
 
+    .cards-slider .slick-dots li{ width: 15px; }
+    .cards-slider .slick-thumb{ width: 15px; }
+
     .card-slide img{ width: 80%; margin: 30px 10%; }
     .card-slider .slick-prev, .card-slider .slick-next{ height: 30px; width: 30px; }
     .card-slider .slick-prev{ top: 85px; left: -40px; }
     .card-slider .slick-next{ top: 85px; right: -40px; }
 
     .cards-slider .slick-prev, .cards-slider .slick-next{ height: 30px; width: 30px; }
-    .cards-slider .slick-prev{ top: 85px; left: -40px; }
-    .cards-slider .slick-next{ top: 85px; right: -40px; }
+    .cards-slider .slick-prev{ top: 65px; left: -40px; }
+    .cards-slider .slick-next{ top: 65px; right: -40px; }
 
-    .trainers-slider .slick-prev, .trainers-slider .slick-next{ height: 30px; width: 30px; }
-    .trainers-slider .slick-prev{ top: 45px; left: -40px; }
-    .trainers-slider .slick-next{ top: 45px; right: -40px; }
+    .mt-slider .slick-prev, .mt-slider .slick-next{ height: 30px; width: 30px; }
+    .mt-slider .slick-prev{ top: 145px; left: -40px; }
+    .mt-slider .slick-next{ top: 145px; right: -40px; }
 }
 
