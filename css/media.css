@@ -17,10 +17,10 @@
     .nav{ font-size: 13px; }
     .nav-address{ margin-top: 10px; }
     .header { min-height: 0; padding-bottom: 30px; }
-    .header h1{ margin-top: 30px; font-size: 40px; }
+    .header h1{ margin-top: 0px; font-size: 40px; }
     .head-last{ margin-top: 70px; }
 
-    .header-news{ min-height: 50px }
+    .header-news{ padding-bottom: 0; }
 }
 
 @media only screen and (max-width : 1200px) {
@@ -32,6 +32,17 @@
 }
 
 @media only screen and (max-width : 1040px) {
+
+    .header-main{ background-position: center center; }
+
+    .header-club{ background-position: left center; }
+
+    .header-center{ background-position: center center; }
+
+    .header-fitness{ background-position: left center; }
+
+    .header-contacts{ background-position: center top; }
+
     .main-options{ padding-top: 40px; padding-bottom: 40px; }
     .mo-left{ width: 100%; }
     .mo-right{ width: 100%; margin: 45px 0 0;}
@@ -48,9 +59,14 @@
     .club-training h2{ font-size: 20px; margin-top: 0px; margin-bottom: 20px; }
     .cr-left{ width: 100%; margin: 0; }
     .cr-right{ width: 100%; margin: 50px 0 0; }
+
+    .section-news h2{ margin-top: 0px;}
 }
 
 @media only screen and (max-width : 1000px) {
+    .header h1{ margin-top: 40px; }
+    .section-news h2{ margin-top: 40px; font-size: 22px; }
+
     .nav-close, .nav-burger{ display: block; }
     .nav-mobile{ display: none; position: absolute; top: 0; left: 0; width: 100%; height: auto; z-index: 4; background: #fff; }
     .nav-center{ float: left; width: 100%; padding-top: 45px; display: block; height: auto; margin: 0; }
