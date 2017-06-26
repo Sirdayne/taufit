@@ -1,11 +1,15 @@
 Vue.component('vue-navigation', {
     template: `
 <div class="navigation">
-                    <div class="nav-logo">
-                        <a href="index.html"><img src="./img/taufit-logo.svg" alt=""></a>
+                    <div class="nav-burger"></div>
+                    <div class="nav-mobile-logo">
+                        <div class="nav-logo">
+                            <a href="index.html"><img src="./img/taufit-logo.svg" alt=""></a>
+                        </div>
                     </div>
-
+                    <div class="nav-mobile">
                     <div class="nav-center">
+                        <div class="nav-close"></div>
                         <a href="index.html">
                             <div class="nav">ГЛАВНАЯ</div>
                         </a>
@@ -24,6 +28,7 @@ Vue.component('vue-navigation', {
                         <a href="contacts.html">
                             <div class="nav">КОНТАКТЫ</div>
                         </a>
+
                     </div>
 
                     <div class="nav-address">
@@ -31,7 +36,7 @@ Vue.component('vue-navigation', {
                         <p>+7 708 480 60 36</p>
                         <span class="js-phone">заказать звонок</span>
                     </div>
-
+                    </div>
                 </div>
 `
 
@@ -332,5 +337,13 @@ $(document).ready(function () {
     $('body').on('click', '.mo-nav', function () {
         $('.mo-nav').removeClass('js-active');
         $(this).addClass('js-active');
+    });
+
+    $('body').on('click', '.nav-close', function () {
+        $('.nav-mobile').hide(300);
+    });
+
+    $('body').on('click', '.nav-burger', function () {
+        $('.nav-mobile').show(300);
     });
 });

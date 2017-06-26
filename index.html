@@ -337,6 +337,13 @@
                 dots: true,
                 autoplay: false,
                 autoplaySpeed: 2800,
+                responsive: [
+                {
+                  breakpoint: 1000,
+                  settings: {
+                    slidesToShow: 1,
+                  }
+                }],
                 customPaging: function(slider, i) {
                     var thumb = ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''];
                     return '<div class="slick-thumb">' + thumb[i] + '</div>';
