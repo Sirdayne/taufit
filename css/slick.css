@@ -428,7 +428,9 @@
     cursor: pointer;
 }
 
-.cards-slide img{  width: 100%; opacity: 0.3; -webkit-transition: .2s linear; transition: .2s linear; position: relative; z-index: 1; transform: scale(.9); box-shadow: 0px 2px 2.6px 2.4px rgba(0, 0, 0, 0.16); }
+.cards-slide img{  width: 100%; opacity: 0.3; -webkit-transition: .2s linear; transition: .2s linear; position: relative; z-index: 1; transform: scale(.9); box-shadow: 0px 2px 2.6px 2.4px rgba(0, 0, 0, 0.16);
+    -webkit-border-radius: 7px; -moz-border-radius: 7px; border-radius: 7px;
+}
 
 .cards-slide h4{ display: none; }
 
