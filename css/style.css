@@ -122,6 +122,29 @@ h6 {
 .modal-message {
   min-height: 380px;
 }
+.modal-card {
+  min-height: 380px;
+  position: relative;
+  padding: 150px 30px 30px;
+}
+.modal-card img {
+  position: absolute;
+  left: 25%;
+  top: -100px;
+  width: 50%;
+}
+.modal-card h4 {
+  float: left;
+  width: 100%;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+.modal-card p {
+  float: left;
+  width: 100%;
+  margin-top: 20px;
+  font-size: 15px;
+}
 .thx {
   display: block;
   margin: 150px auto;
@@ -474,6 +497,13 @@ h6 {
 }
 .main-cards .btn-wrap {
   margin-top: 40px;
+}
+.cards-title {
+  float: left;
+  width: 100%;
+  margin-bottom: 30px;
+  font-size: 23px;
+  font-family: "OpenSans-Bold";
 }
 .main-trainers {
   background: #ebebeb;

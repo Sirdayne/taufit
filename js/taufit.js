@@ -250,6 +250,13 @@ Vue.component('vue-modals', {
     template: `
 
     <div class="modal-wrapper">
+        <div class="modal modal-card">
+            <div class="modal-close"></div>
+            <img src="" alt="">
+            <h4></h4>
+            <p></p>
+        </div>
+
         <div class="modal modal-phone">
             <div class="modal-close"></div>
 
@@ -345,5 +352,9 @@ $(document).ready(function () {
 
     $('body').on('click', '.nav-burger', function () {
         $('.nav-mobile').show(300);
+    });
+
+    $('body').on('click', '.js-cards', function () {
+        $('.modal-card, .modal-back').show(300);
     });
 });
